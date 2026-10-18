@@ -70,5 +70,5 @@ class FaceRenderer:
         # Print micro pose at a low rate (optional; keep noise down)
         # (Later this will drive rig offsets rather than spam logs.)
         # If you want this always-on, remove the threshold checks.
-        if abs(self.head_roll_deg) > 1 or abs(self.head_pitch_deg) > 1:
+        if abs(self.head_roll_deg) > 3 or abs(self.head_pitch_deg) > 1:
             print(f"[FACE] micro_pose roll={self.head_roll_deg:+.1f}° pitch={self.head_pitch_deg:+.1f}°")
